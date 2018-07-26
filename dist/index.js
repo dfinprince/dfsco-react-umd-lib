@@ -76,19 +76,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/lib/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/dist/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js!./src/lib/textInput.css":
-/*!*********************************************************!*\
-  !*** ./node_modules/css-loader!./src/lib/textInput.css ***!
-  \*********************************************************/
+/***/ "./node_modules/css-loader/index.js!./src/dist/textInput.css":
+/*!**********************************************************!*\
+  !*** ./node_modules/css-loader!./src/dist/textInput.css ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".simple-form-group {\\n    margin-bottom: 1rem;\\n  }\\n  .simple-text-label {\\n    display: block;\\n    color: red;\\n  }\\n  .simple-text-input {\\n    display: inline-block;\\n    margin-bottom: 0.5rem;\\n    font-size: 16px;\\n    font-weight: 400;\\n    color: rgb(33, 37, 41);\\n  }\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/lib/textInput.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".simple-form-group {\\n    margin-bottom: 1rem;\\n  }\\n  .simple-text-label {\\n    display: block;\\n    color: red;\\n  }\\n  .simple-text-input {\\n    display: inline-block;\\n    margin-bottom: 0.5rem;\\n    font-size: 16px;\\n    font-weight: 400;\\n    color: rgb(33, 37, 41);\\n  }\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/dist/textInput.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -235,38 +235,38 @@ eval("\n\n/**\n * When source maps are enabled, `style-loader` uses a link eleme
 
 /***/ }),
 
-/***/ "./src/lib/index.js":
-/*!**************************!*\
-  !*** ./src/lib/index.js ***!
-  \**************************/
+/***/ "./src/dist/index.js":
+/*!***************************!*\
+  !*** ./src/dist/index.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.TextInput = undefined;\n\nvar _textInput = __webpack_require__(/*! ./textInput */ \"./src/lib/textInput.js\");\n\nvar _textInput2 = _interopRequireDefault(_textInput);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.TextInput = _textInput2.default;\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/lib/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.TextInput = undefined;\n\nvar _textInput = __webpack_require__(/*! ./textInput */ \"./src/dist/textInput.js\");\n\nvar _textInput2 = _interopRequireDefault(_textInput);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.TextInput = _textInput2.default;\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/dist/index.js?");
 
 /***/ }),
 
-/***/ "./src/lib/textInput.css":
+/***/ "./src/dist/textInput.css":
+/*!********************************!*\
+  !*** ./src/dist/textInput.css ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./textInput.css */ \"./node_modules/css-loader/index.js!./src/dist/textInput.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/dist/textInput.css?");
+
+/***/ }),
+
+/***/ "./src/dist/textInput.js":
 /*!*******************************!*\
-  !*** ./src/lib/textInput.css ***!
+  !*** ./src/dist/textInput.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./textInput.css */ \"./node_modules/css-loader/index.js!./src/lib/textInput.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/lib/textInput.css?");
-
-/***/ }),
-
-/***/ "./src/lib/textInput.js":
-/*!******************************!*\
-  !*** ./src/lib/textInput.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar _jsxFileName = \"/Users/princecheruvathur/Projects/dfsco-react-umd-lib/src/lib/textInput.js\";\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./textInput.css */ \"./src/lib/textInput.css\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nvar TextInput = function TextInput(_ref) {\n  var _ref$type = _ref.type,\n      type = _ref$type === undefined ? \"text\" : _ref$type,\n      label = _ref.label,\n      value = _ref.value,\n      _onChange = _ref.onChange;\n  return _react2.default.createElement(\n    \"div\",\n    _defineProperty({ className: \"simple-form-group\", __source: {\n        fileName: _jsxFileName,\n        lineNumber: 5\n      },\n      __self: undefined\n    }, \"__self\", undefined),\n    label && _react2.default.createElement(\n      \"label\",\n      _defineProperty({ className: \"simple-text-label\", __source: {\n          fileName: _jsxFileName,\n          lineNumber: 6\n        },\n        __self: undefined\n      }, \"__self\", undefined),\n      label\n    ),\n    _react2.default.createElement(\"input\", _defineProperty({\n      type: type,\n      className: \"simple-text-input\",\n      value: value,\n      onChange: function onChange(e) {\n        return _onChange && _onChange(e.target.value);\n      },\n      onClick: function onClick(e) {\n        return _onChange && _onChange(e.target.value);\n      },\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 7\n      },\n      __self: undefined\n    }, \"__self\", undefined))\n  );\n};\n\nexports.default = TextInput;\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/lib/textInput.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar _jsxFileName = \"/Users/princecheruvathur/Projects/dfsco-react-umd-lib/src/dist/textInput.js\";\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./textInput.css */ \"./src/dist/textInput.css\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nvar TextInput = function TextInput(_ref) {\n  var _ref$type = _ref.type,\n      type = _ref$type === undefined ? \"text\" : _ref$type,\n      label = _ref.label,\n      value = _ref.value,\n      _onChange = _ref.onChange;\n  return _react2.default.createElement(\n    \"div\",\n    _defineProperty({ className: \"simple-form-group\", __source: {\n        fileName: _jsxFileName,\n        lineNumber: 5\n      },\n      __self: undefined\n    }, \"__self\", undefined),\n    label && _react2.default.createElement(\n      \"label\",\n      _defineProperty({ className: \"simple-text-label\", __source: {\n          fileName: _jsxFileName,\n          lineNumber: 6\n        },\n        __self: undefined\n      }, \"__self\", undefined),\n      label\n    ),\n    _react2.default.createElement(\"input\", _defineProperty({\n      type: type,\n      className: \"simple-text-input\",\n      value: value,\n      onChange: function onChange(e) {\n        return _onChange && _onChange(e.target.value);\n      },\n      onClick: function onClick(e) {\n        return _onChange && _onChange(e.target.value);\n      },\n      __source: {\n        fileName: _jsxFileName,\n        lineNumber: 7\n      },\n      __self: undefined\n    }, \"__self\", undefined))\n  );\n};\n\nexports.default = TextInput;\n\n//# sourceURL=webpack://dfsco-react-unpkg-lib/./src/dist/textInput.js?");
 
 /***/ })
 

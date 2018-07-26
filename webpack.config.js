@@ -4,9 +4,9 @@ const resolve = require('./webpack.config.resolve')
 const modules = require('./webpack.config.modules')
 
 module.exports = {
-    entry: './src/lib/index.js',
+    entry: './src/dist/index.js',
     output: {
-        path: path.resolve(__dirname, './umd'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'index.js',
         // export to AMD, CommonJS, or window
         libraryTarget: 'umd',
