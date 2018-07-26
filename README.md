@@ -1,5 +1,5 @@
 # simple-component-library
-A library of React components created using `create-react-app`.
+A umd package created by modifying dfsco-react-lib`.
 ## Installation
 Run the following command:
-`npm install dfsco-react-lib`
+`npm install dfsco-react-umd-lib`
