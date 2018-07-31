@@ -1,6 +1,6 @@
 {
   "name": "dfsco-react-lib",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "A library of react components in umd",
   "main": "dist/index.js",

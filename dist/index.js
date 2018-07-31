@@ -3,7 +3,23 @@
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 (function (global, factory) {
-    (typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.umdLibrary = factory();
+    var g;
+    if (typeof window !== "undefined") {
+        g = window;
+    } else if (typeof global !== "undefined") {
+        g = global;
+    } else if (typeof self !== "undefined") {
+        g = self;
+    } else {
+        // works providing we're not in "use strict";
+        // needed for Java 8 Nashorn
+        // see https://github.com/facebook/react/issues/3037
+        g = this;
+    }
+
+    global = g;
+
+    (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.umdLibrary = factory();
 })(undefined, function () {
     'use strict';
 
@@ -30,14 +46,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             _onChange = _ref.onChange;
 
         return React.createElement(
-            'div',
+            "div",
             { style: simpleFormGroup },
             label && React.createElement(
-                'label',
+                "label",
                 { style: simpleTextLabel },
                 label
             ),
-            React.createElement('input', {
+            React.createElement("input", {
                 type: type,
                 style: simpleTextInput,
                 value: value,
