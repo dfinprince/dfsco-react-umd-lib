@@ -1,5 +1,5 @@
 # simple-component-library
-A umd package created by modifying dfsco-react-lib`.
+`A library of react components in umd`.
 ## Installation
-Run the following command:
-`npm install dfsco-react-umd-lib`
+Run the following command:    
+`<script type="text/javascript" src="https://unpkg.com/dfsco-react-lib@latest/dist/index.js"></script>`.
