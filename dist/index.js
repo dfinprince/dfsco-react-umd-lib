@@ -2,12 +2,25 @@
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-require('./textInput.css');
-
 (function (global, factory) {
     (typeof exports === 'undefined' ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.umdLibrary = factory();
 })(undefined, function () {
     'use strict';
+
+    var simpleFormGroup = {
+        marginBottom: '1rem'
+    };
+    var simpleTextLabel = {
+        display: 'block',
+        color: 'red'
+    };
+    var simpleTextInput = {
+        display: 'inlineBlock',
+        marginBottom: '0.5rem',
+        fontSize: '16px',
+        fontWeight: 400,
+        color: 'rgb(33, 37, 41)'
+    };
 
     function TextInput(_ref) {
         var _ref$type = _ref.type,
@@ -18,15 +31,15 @@ require('./textInput.css');
 
         return React.createElement(
             'div',
-            { className: 'simple-form-group' },
+            { style: simpleFormGroup },
             label && React.createElement(
                 'label',
-                { className: 'simple-text-label' },
+                { style: simpleTextLabel },
                 label
             ),
             React.createElement('input', {
                 type: type,
-                className: 'simple-text-input',
+                style: simpleTextInput,
                 value: value,
                 onChange: function onChange(e) {
                     return _onChange && _onChange(e.target.value);

@@ -1,7 +1,5 @@
 'use strict';
 
-import "./textInput.css";
-
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) :
@@ -9,13 +7,28 @@ import "./textInput.css";
 }(this, (function () {
     'use strict';
 
+    var simpleFormGroup = {
+        marginBottom: '1rem'
+    }
+    var simpleTextLabel = {
+        display: 'block',
+        color: 'red'
+    }
+    var simpleTextInput = {
+        display: 'inlineBlock',
+        marginBottom: '0.5rem',
+        fontSize: '16px',
+        fontWeight: 400,
+        color: 'rgb(33, 37, 41)'
+    }
+
     function TextInput({ type = "text", label, value, onChange }) {
         return (
-            <div className="simple-form-group">
-                {label && <label className="simple-text-label">{label}</label>}
+            <div style={simpleFormGroup}>
+                {label && <label style={simpleTextLabel}>{label}</label>}
                 <input
                     type={type}
-                    className="simple-text-input"
+                    style={simpleTextInput}
                     value={value}
                     onChange={e => onChange && onChange(e.target.value)}
                     onClick={e => onChange && onChange(e.target.value)}
